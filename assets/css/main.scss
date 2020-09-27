@@ -1,0 +1,37 @@
+@keyframes button {
+    from {}
+    to {
+        background: white;
+        color: black;
+    }
+}
+body {
+    margin: 0px;
+    display: grid;
+    grid: 'h h' 48px
+    'm m' auto
+    'f f' 155px
+        /1fr 1fr;
+    background: #FFFFFF;
+    justify-items: center;
+    min-height: 100vh;
+}
+footer {
+    background: url(../images/Vector.jpg);
+    border: 2px solid #FFFFFF;
+    width: 1440px;
+    height: 80px;
+    box-sizing: border-box;
+    grid-area: f;
+    align-self: end;
+}
+
+.text{
+    font-family: Exo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 192px;
+    margin-top: 40px;
+}

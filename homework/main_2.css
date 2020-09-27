@@ -1,0 +1,118 @@
+body {
+margin: 0px;
+display: grid;
+grid: 'h h' 48px
+      'm m' auto
+      'f f' auto
+        /1fr;
+background: #FFFFFF;  
+justify-items: center;
+    }
+
+header {
+grid-area: h;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 195px;
+background: #464646;;
+color: #F8F8F8;
+font-family: Freehand;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 29px;
+width: 1440px;
+box-sizing: border-box; 
+    }
+
+.burger{
+width: 32px;
+height: 0px;
+left: 1216px;
+top: 12px;
+border: 2px solid #FFFFFF;
+}
+
+.burger2{
+width: 32px;
+height: 0px;
+left: 1216px;
+margin-top: 5px;
+border: 2px solid #FFFFFF;
+    }
+
+.burger3{
+width: 32px;
+height: 0px;
+left: 1216px;
+margin-top: 5px;
+border: 2px solid #FFFFFF;
+    }   
+
+main {
+grid-area: m;
+display: grid;
+grid: 'a b' max-content
+      'i i' max-content;
+grid-column-gap: 32px;
+grid-row-gap: 48px;
+box-sizing: border-box;
+width: 1440px;
+position: relative;
+padding-top:192px;
+justify-content: center;
+    }
+    
+.star{
+height:20px;
+width:20px;
+grid-area:b;
+    }
+
+.button { 
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+width: 400px;
+height: 48px;
+background: white;
+border: 2px solid #000000;
+box-sizing: border-box;
+cursor: pointer;
+text-align:center;          
+    }
+
+.btn{
+grid-area:i;
+display: inline-flex;
+flex-direction: column;
+row-gap:21px;
+}
+
+img {
+height:160px;
+width:160px; 
+}
+h4 {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+}
+
+p {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+}
+
+.description {
+grid-area:b;
+margin:-30px;
+}

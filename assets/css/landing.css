@@ -1,0 +1,103 @@
+main {
+    grid-area: m;
+    display: grid;
+    grid: 'sh sh' max-content
+    'a  i'  max-content
+    'b  i'  max-content
+          / max-content 1fr;
+    grid-row-gap: 112px;
+    grid-column-gap: 16px;
+    box-sizing: border-box;
+    width: 1440px;
+    padding: 0px 192px;
+    position: relative;
+    padding-top: 112px;
+}
+
+.article1{
+    font-family: "Exo";
+    font-size: 64px;
+    color: #000000;
+    grid-area: sh;
+}
+
+p {
+    margin: 0px;
+}
+
+hr{
+    margin:0px;
+    margin-top:30px;
+    width:400px;
+    height: 0px;
+    border: 5px solid #BDBDBD;
+    background-color:#BDBDBD;
+}
+
+.article2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 59px;
+    color: #000000;
+    position: relative;
+    grid-area: a;
+}
+
+img.img {
+    position: absolute;
+    top: 0px;
+    left: 112px;
+}
+
+h4 {
+    margin:0px;
+}
+
+.blackbox{
+    width: 112px;
+    height: 112px;
+    margin-left: 550px;
+    margin-top: -180px;
+    background: #000000;
+}
+
+.whitebox{
+    width: 112px;
+    height: 112px;
+    margin-left: 660px;
+    margin-top: -250px;
+    background: #FFFFFF;
+    border: 4px solid #000000;
+    box-sizing: border-box;
+}
+.ladia {
+    grid-area: i;
+    align-self: end;
+}
+
+.figure{
+    font-size:80px;
+}
+
+.button:hover {
+    animation: button 300ms forwards;
+}
+.button {
+    grid-area: b;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 52px;
+    display: flex;
+    justify-content:center;
+    color: #FFFFFF;
+    width: 208px;
+    height: 64px;
+    background: #000000;
+    border: 4px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+}

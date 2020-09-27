@@ -1,0 +1,37 @@
+header {
+    grid-area: h;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 195px;
+    background: #464646;;
+    color: #F8F8F8;
+    font-family: Freehand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+    width: 1440px;
+    box-sizing: border-box;
+}
+.burger{
+    width: 32px;
+    height: 0px;
+    left: 1216px;
+    top: 12px;
+    border: 2px solid #FFFFFF;
+}
+.burger2{
+    width: 32px;
+    height: 0px;
+    left: 1216px;
+    margin-top: 5px;
+    border: 2px solid #FFFFFF;
+}
+.burger3{
+    width: 32px;
+    height: 0px;
+    left: 1216px;
+    margin-top: 5px;
+    border: 2px solid #FFFFFF;
+}
