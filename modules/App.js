@@ -27,5 +27,5 @@ export default class App extends Component {
         footer: new Footer()
     }
 }
-const app = new App({}, './assets/css/main.scss', document.body);
+const app = new App({}, './assets/css/main.css', document.body);
 app.render();

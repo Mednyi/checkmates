@@ -1,8 +1,8 @@
 'use strict';
 import Component from './framework/component.js'
 export default class Auth extends Component {
-    constructor() {
-        super({}, './assets/css/auth.css');
+    constructor($el) {
+        super({}, './assets/css/auth.css', $el);
         this.data.password = '';
         this.data.email = '';
         this.data.mailErr = undefined;
@@ -16,11 +16,11 @@ export default class Auth extends Component {
               <input class="${this.data.mailErr !== undefined ? (this.data.mailErr ? 'text_input error' : 'text_input success') : 'text_input'}" type="text" placeholder="E-mail" value="${this.data.email}">
               <input class="${this.data.passErr !== undefined ? (this.data.passErr ? 'text_input error' : 'text_input success') : 'text_input'}" type="passsword" placeholder="Password" value="${this.data.password}">
            </article>
-           <article class="article1">
+           <article class="article1">           
                <input class="button" type="submit" value="Login">
                <input class="button underline" type="submit" value="Register">
            </article>
-       </main>
+       </main>  
         `
     }
     methods () {

@@ -1,8 +1,8 @@
-'use strict';
+ 'use strict';
 import Component from './framework/component.js'
 export default class Landing extends Component {
-    constructor() {
-        super(null, './assets/css/landing.css');
+    constructor($el) {
+        super(null, './assets/css/landing.css', $el);
     }
     template() {
         return `
