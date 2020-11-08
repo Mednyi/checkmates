@@ -1,0 +1,125 @@
+.light {
+    background-color: #D7CF9E;
+    width:65px;
+    height:65px;
+    border:1px solid black;
+}
+
+.dark {
+    background-color: #492D27;
+    border:1px solid black;
+    width:65px;
+    height:65px;
+}
+
+.black{
+    font: solid Awesome 5 Free;
+    font-size: 52px;
+    color: black;
+    cursor: pointer;
+}
+
+.white{
+    font-size: 52px;
+    font: solid Awesome 5 Free;
+    color: white;
+    cursor: pointer;
+}
+
+.button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    width: 96px;
+    height: 32px;
+    background: black;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align:center;
+    color:white;
+    }
+
+body {
+    margin: 0px;
+    display: grid;
+    grid: 'h h' 48px
+          'm m' auto
+           /1fr;
+    background: #FFFFFF;
+    justify-items: center;
+    }
+
+header {
+    grid-area: h;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 195px;
+    background: #464646;;
+    color: #F8F8F8;
+    font-family: Freehand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+    width: 1440px;
+    box-sizing: border-box;
+    }
+
+.burger{
+    width: 32px;
+    height: 0px;
+    left: 1216px;
+    top: 12px;
+    border: 2px solid #FFFFFF;
+    }
+
+.burger2{
+        width: 32px;
+        height: 0px;
+        left: 1216px;
+        margin-top: 5px;
+        border: 2px solid #FFFFFF;
+        }
+
+.burger3{
+        width: 32px;
+        height: 0px;
+        left: 1216px;
+        margin-top: 5px;
+        border: 2px solid #FFFFFF;
+        }
+
+main {
+    margin: 0px;
+    grid-area: m;
+    display: grid;
+    grid: 'a a' max-content
+          'b b' max-content
+          'i i' max-content;
+          grid-column-gap: 32px;
+          grid-row-gap: 24px;
+          justify-items: center;
+    padding-top: 100px;
+            }
+
+.btn{
+    grid-area:i;
+    display: inline-flex;
+    column-gap: 48px;
+    }
+
+
+.chess-board {
+    grid-area: b;
+    border-spacing: 0px;
+    border: 6px double black;
+
+}
+
+.time{
+    grid-area:a;
+    display: inline-flex;
+    }

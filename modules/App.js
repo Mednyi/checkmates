@@ -5,6 +5,7 @@ import Header from "./Header.js";
 import Landing from "./Landing.js";
 import Auth from "./Auth.js";
 import Footer from "./Footer.js";
+import Desk from "./Desk.js";
 const router = new Router(undefined, {
     landing: {
         path: '',
@@ -13,6 +14,10 @@ const router = new Router(undefined, {
     auth: {
         path: 'auth',
         component: Auth
+    },
+    desk: {
+        path: 'desk',
+        component: Desk
     }
 });
 Component.use({$router: router});
