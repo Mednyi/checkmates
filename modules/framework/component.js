@@ -33,11 +33,17 @@ export default class Component {
         }
         if (this.$css) {
             const oldLink = document.querySelector(`link[href="${this.$css}"]`);
-            if (oldLink) oldLink.remove();
-            const link = document.createElement('link');
-            link.href = this.$css;
-            link.rel = 'stylesheet';
-            document.getElementsByTagName('head')[0].append(link);
+            let cssFlag;
+            if (oldLink) {
+                cssFlag = oldLink.getAttribute('href') === this.$css;
+                if(!cssFlag) oldLink.remove();
+            }
+            if(!cssFlag) {
+                const link = document.createElement('link');
+                link.href = this.$css;
+                link.rel = 'stylesheet';
+                document.getElementsByTagName('head')[0].append(link);
+            }
         }
         this.onRender();
         return this.$el;
