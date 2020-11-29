@@ -55,7 +55,7 @@ export default class Landing extends Component {
                 if(!to.figure && moveVector.length() === 2**(1/2)) return false
                 if(moveVector.y === 0) return false
                 if(moveVector.length() !== 2**(1/2) && to.figure) return false
-                if(from.player === 1 && moveVector.y < 0) return false
+                if(from.player === 1  && moveVector.y < 0) return false
                 if(from.player === 2 && moveVector.y > 0) return false*/
                 if((from.row === 1 || from.row === 6) && (moveVector.length() === 2 || moveVector.length() === 1) && !to.figure) return true
                 if(to.figure && moveVector.length() === 2**(1/2)) return true
